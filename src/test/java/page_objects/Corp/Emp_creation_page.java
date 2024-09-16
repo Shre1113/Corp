@@ -3,6 +3,7 @@ package page_objects.Corp;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
 
 public class Emp_creation_page extends Base_page
 {
@@ -35,15 +36,15 @@ public class Emp_creation_page extends Base_page
 	@FindBy(name="status")
 	WebElement Status;
 	@FindBy(name="date_of_joining")
-	WebElement doj;
+	WebElement Doj;
 	@FindBy(name="date_of_birth")
-	WebElement dob;
+	WebElement Dob;
 	@FindBy(name="gender")
 	WebElement Gender;
 	@FindBy(name="marital_status")
 	WebElement Marital_status;
 	@FindBy(name="blood_group")
-	WebElement blood_group;
+	WebElement Blood_group;
 	@FindBy(name="default_shift")
 	WebElement Default_shift;
 	@FindBy(name="holiday_list")
@@ -106,10 +107,106 @@ public class Emp_creation_page extends Base_page
 	@FindBy(id="field-:r4j:")
 	WebElement Attach_file_upload_adress;
 	//Save
-	@FindBy(xpath="//button[.='Save'])")
+	@FindBy(xpath="//button[.='Save']")
 	WebElement Save;
 	
-	
+	public void Employee_M()
+	{
+		Emp_man.click();
+	}
+	public void Employee_Onb()
+	{
+		Emp_onboard.click();
+	}
+	public void Add_Employee()
+	{
+		Add_new.click();
+	}
+	public void name()
+	{
+		First_name.sendKeys("Balajione");
+		Middle_name.sendKeys("A");
+		Last_name.sendKeys("B");
+	}
+	public void role()
+	{
+		Select options= new Select(Role);
+		options.selectByVisibleText("Employee");
+	}
+	public void email()
+	{
+		Email.sendKeys("Balajione@gmail.com");
+	}
+	public void mobile_number()
+	{
+		Mobile_number.sendKeys("9912123679");
+	}
+	public void emp_id()
+	{
+		Emp_id.sendKeys("BAL_02");
+	}
+	public void status()
+	{
+		Select options = new Select (Status);
+		options.selectByVisibleText("Active");
+	}
+	public void doj()
+	{
+		Doj.sendKeys("10-09-2024");
+	}
+	public void dob()
+	{
+		Dob.sendKeys("15-08-2000");
+	}
+	public void gender()
+	{
+		Select options = new Select(Gender);
+		options.selectByVisibleText("Male");
+	}
+	public void marital_status()
+	{
+		Select options = new Select(Marital_status);
+		options.selectByVisibleText("Single");
+	}
+	public void blood_group()
+	{
+		Select options = new Select(Blood_group);
+		options.selectByVisibleText("O+");
+	}
+	public void default_shift()
+	{
+		Select options = new Select(Default_shift);
+		options.selectByVisibleText("General");
+	}
+	public void holiday_list()
+	{
+		Select options = new Select (Holiday_list);
+		options.selectByVisibleText("2024_holiday_list");
+	}
+	public void grade()
+	{
+		Select options = new Select (Grade);
+		options.selectByVisibleText("A");
+	}
+	public void leave_policy()
+	{
+		Select options = new Select(Leave_policy);
+		options.selectByVisibleText("Leave Policy(12/09) (HR-LPOL-2024-00003)");
+	}
+	public void reports_to()
+	{
+
+	}
+	public void branch()
+	{
+		Select options = new Select(Branch);
+		options.selectByVisibleText("Head Office");
+	}
+	public void save()
+	{
+		Save.click();
+	  
+	}
 	
 
 }
