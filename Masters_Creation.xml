@@ -6,9 +6,11 @@
     </listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="test_cases.Shift_type"/>
       
+      <class name="test_cases.Shift_type"/>
+        <class name="test_cases.Vendor_type"/>
       <class name="test_cases.Branch_type"/>
+      
       
     </classes>
   </test> <!-- Test -->

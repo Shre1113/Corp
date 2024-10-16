@@ -4,6 +4,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
 
 public class Vendor_page extends Base_page
 {
@@ -26,24 +27,66 @@ public class Vendor_page extends Base_page
       @FindBy(name="vendor_id")
       WebElement Vendor_id;
       @FindBy(name="email")
-      WebElement Email;
+      WebElement Email_;
       @FindBy(name="vendor_type")
       WebElement Vendor_type;
       @FindBy(name="company")
-      WebElement Company;
+      WebElement Company_;
       @FindBy(name="address")
-      WebElement Address;
+      WebElement Address_;
+      @FindBy(xpath="//button[.='Save']")
+      WebElement Save;
       
       
-      public void Master() throws InterruptedException
+      public void master() throws InterruptedException
+  	{
+  		JavascriptExecutor js = (JavascriptExecutor) driver;
+  		js.executeScript("arguments[0].click();", Master);
+  		Thread.sleep(2000);
+  		JavascriptExecutor js1 = (JavascriptExecutor) driver;
+  		js1.executeScript("arguments[0].click();", HRMS);
+  		
+  	}
+      public void vendor()
       {
-    	  JavascriptExecutor js=(JavascriptExecutor)driver;
-    	  js.executeAsyncScript("arguments[0].click();", Master);
-    	  Thread.sleep(2000);
-    	  HRMS.click();;
+    	  Vendor.click();
       }
-      //public    
-      
-      
-
+      public void add_new_vendor()
+      {
+    	  Add_new_vendor.click();
+      }
+      public void Vendor_name(String Vendor_Name)
+      {
+    	  Vendor_name.sendKeys(Vendor_Name);
+      }
+      public void mobile_number(String Mobile_Number)
+      {
+    	  Mobile_number.sendKeys(Mobile_Number);
+      }
+      public void vendor_id(String Vendor_Id)
+      {
+    	  Vendor_id.sendKeys(Vendor_Id);
+      }
+      public void email(String Email)
+      {
+    	  Email_.sendKeys(Email);
+      }
+      public void vendor_type(String Vendor_Type)
+      {
+    	  Select options = new Select(Vendor_type);
+    	  options.selectByVisibleText(Vendor_Type);
+      }
+      public void Company(String Company)
+      {
+    	  Select options = new Select(Company_);
+    	  options.selectByVisibleText(Company);
+      }
+      public void address(String Address)
+      {
+    	  Address_.sendKeys(Address);
+      }
+      public void save()
+      {
+    	  Save.click();
+      }
 }

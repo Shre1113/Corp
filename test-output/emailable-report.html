@@ -9,57 +9,13 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">28,568</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">64,385</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">test_cases.Branch_type</td><td><a href="#m0">Branch_type_creation</a></td><td rowspan="1">1728387499647</td><td rowspan="1">7199</td></tr><tr class="failedodd"><td rowspan="1">test_cases.Shift_type</td><td><a href="#m1">loginTest</a></td><td rowspan="1">1728387486612</td><td rowspan="1">7121</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">test_cases.Branch_type</td><td><a href="#m0">Branch_type_creation</a></td><td rowspan="1">1728644677795</td><td rowspan="1">8555</td></tr><tr class="passedodd"><td rowspan="1">test_cases.Shift_type</td><td><a href="#m1">loginTest</a></td><td rowspan="1">1728644630573</td><td rowspan="1">7393</td></tr><tr class="passedeven"><td rowspan="2">test_cases.Vendor_type</td><td><a href="#m2">vendor_creation</a></td><td rowspan="2">1728644644076</td><td rowspan="2">9666</td></tr><tr class="passedeven"><td><a href="#m3">vendor_creation</a></td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">test_cases.Branch_type#Branch_type_creation</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Head two</td><td>1.1</td><td>1.1</td><td>300.0</td><td>Plot No 92, 93 &amp; 94, Kavuri Hills Rd, Sri Rama Colony, Madhapur, Hyderabad, Telangana 500034</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (138, 558)
-  (Session info: chrome=129.0.6668.90)
-Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6a89a015ff91d8abe0fe7508cb7f1adf, clickElement {id=f.3C08F886AB3A18F36735CA28DF252470.d.E3E18A3875DDD49D64E29C1D99AF43D4.e.731}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63904}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63904/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (6a89a015ff91d8abe0fe7508cb7f1adf)] -&gt; xpath: //*[@id=&quot;root&quot;]/div/aside/div[2]/div[1]/div[2]/ul/li[11]/div[2]/ul/li[1]/a]
-Session ID: 6a89a015ff91d8abe0fe7508cb7f1adf
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy38.click(Unknown Source)
-	at page_objects.Corp.Branch_page.master(Branch_page.java:42)
-	at test_cases.Branch_type.Branch_type_creation(Branch_type.java:25)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">test_cases.Shift_type#loginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>Night_1</td><td>20:00</td><td>04:00</td><td>Gen</td><td>True</td><td>2024_holiday_list</td><td>60</td><td>60</td></tr><tr><th colspan="8">Exception</th></tr><tr><td colspan="8"><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (138, 558)
-  (Session info: chrome=129.0.6668.90)
-Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [324032c3c882cc52ba48e5af36a2e45f, clickElement {id=f.E20CB436BE2C23799CC0F6B74C938F32.d.1D0E910FC5996A6A6828489D4A093D36.e.724}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63876}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63876/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (324032c3c882cc52ba48e5af36a2e45f)] -&gt; xpath: //*[@id=&quot;root&quot;]/div/aside/div[2]/div[1]/div[2]/ul/li[11]/div[2]/ul/li[1]/a]
-Session ID: 324032c3c882cc52ba48e5af36a2e45f
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy38.click(Unknown Source)
-	at page_objects.Corp.Shift_type_page.master(Shift_type_page.java:54)
-	at test_cases.Shift_type.loginTest(Shift_type.java:28)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">test_cases.Branch_type#Branch_type_creation</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Head two_2</td><td>1.1</td><td>1.1</td><td>300.0</td><td>Plot No 92, 93 &amp; 94, Kavuri Hills Rd, Sri Rama Colony, Madhapur, Hyderabad, Telangana 500034</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">test_cases.Shift_type#loginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>Night_3</td><td>20:00</td><td>04:00</td><td>Gen</td><td>True</td><td>2024_holiday_list</td><td>60</td><td>60</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">test_cases.Vendor_type#vendor_creation</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>Orange Corp_1</td><td>9916387574</td><td>ORG_02</td><td>Orange@gmail.com</td><td>Test</td><td>RNIT</td><td>Hyderabad</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">test_cases.Vendor_type#vendor_creation</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>Orange Corp_2</td><td>9916387574</td><td>ORG_02</td><td>Orange@gmail.com</td><td>Test</td><td>RNIT</td><td>Hyderabad</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

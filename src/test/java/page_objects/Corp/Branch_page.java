@@ -17,7 +17,7 @@ public class Branch_page extends Base_page
 	WebElement HRMS;
 	@FindBy(xpath="//button[.='Branch']")
 	WebElement Branch;
-	@FindBy(xpath="//button[.='Add Branch']")
+	@FindBy(xpath="//button[.='Add New Branch']")
 	WebElement Add_new_branch;
 	@FindBy(name="branch")
 	WebElement Branch_name;
