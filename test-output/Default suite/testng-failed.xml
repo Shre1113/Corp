@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test_cases.Vendor_type">
+      <class name="test_cases.Employee_Grade_Creation">
         <methods>
           <include name="setup"/>
-          <include name="vendor_creation" invocation-numbers="0"/>
           <include name="teardown"/>
+          <include name="Branch_type_creation" invocation-numbers="0"/>
         </methods>
-      </class> <!-- test_cases.Vendor_type -->
+      </class> <!-- test_cases.Employee_Grade_Creation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
