@@ -73,7 +73,7 @@ public class Employee_grade_page_DApproach extends Base_page
 		
 	    // Method to interact with Grade Name field
 	    public void grade_name(String gradeName) {
-	        WebElement gradeNameField = driver.findElement(By.name("grade_name"));
+	        WebElement gradeNameField = driver.findElement(By.name("__newname"));
 	        gradeNameField.sendKeys(gradeName);
 	    }
 

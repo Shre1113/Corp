@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-22T13:19:39 IST" name="Default suite" finished-at="2024-10-22T13:19:55 IST" duration-ms="16858">
+  <suite started-at="2024-10-22T15:36:09 IST" name="Default suite" finished-at="2024-10-22T15:36:47 IST" duration-ms="38348">
     <groups>
     </groups>
-    <test started-at="2024-10-22T13:19:39 IST" name="Default test" finished-at="2024-10-22T13:19:55 IST" duration-ms="16858">
-      <class name="test_cases.Employee_Grade_Creation">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:test_cases.Employee_Grade_Creation@2c1b194a]" started-at="2024-10-22T13:19:40 IST" name="setup" finished-at="2024-10-22T13:19:44 IST" duration-ms="4256" status="PASS">
+    <test started-at="2024-10-22T15:36:09 IST" name="Default test" finished-at="2024-10-22T15:36:47 IST" duration-ms="38348">
+      <class name="test_cases.Employee_grade_Creation_DApproach">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:test_cases.Employee_grade_Creation_DApproach@4dbb42b7]" started-at="2024-10-22T15:36:11 IST" name="setup" finished-at="2024-10-22T15:36:14 IST" duration-ms="3466" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,42 +18,58 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Employee_grade_creation(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test_cases.Employee_Grade_Creation@2c1b194a]" started-at="2024-10-22T13:19:44 IST" name="Employee_grade_creation" data-provider="Employee_grade_data" finished-at="2024-10-22T13:19:52 IST" duration-ms="7874" status="PASS">
+        <test-method signature="gradeCreationTest(java.lang.String,[[Ljava.lang.String;)[pri:0, instance:test_cases.Employee_grade_Creation_DApproach@4dbb42b7]" started-at="2024-10-22T15:36:14 IST" name="gradeCreationTest" data-provider="Employee_grade_data" finished-at="2024-10-22T15:36:27 IST" duration-ms="12397" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[c]]>
+                <![CDATA[Grade C]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Metro City]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[9.0]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[87.0]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[9.0]]>
+                <![CDATA[[[Ljava.lang.String;@50ec4bfc]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Employee_grade_creation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:test_cases.Employee_Grade_Creation@2c1b194a]" started-at="2024-10-22T13:19:52 IST" name="teardown" finished-at="2024-10-22T13:19:55 IST" duration-ms="3175" status="PASS">
+        </test-method> <!-- gradeCreationTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test_cases.Employee_grade_Creation_DApproach@4dbb42b7]" started-at="2024-10-22T15:36:27 IST" name="teardown" finished-at="2024-10-22T15:36:30 IST" duration-ms="3240" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- test_cases.Employee_Grade_Creation -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:test_cases.Employee_grade_Creation_DApproach@4dbb42b7]" started-at="2024-10-22T15:36:30 IST" name="setup" finished-at="2024-10-22T15:36:34 IST" duration-ms="3664" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="gradeCreationTest(java.lang.String,[[Ljava.lang.String;)[pri:0, instance:test_cases.Employee_grade_Creation_DApproach@4dbb42b7]" started-at="2024-10-22T15:36:34 IST" name="gradeCreationTest" data-provider="Employee_grade_data" finished-at="2024-10-22T15:36:44 IST" duration-ms="10233" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Grade D]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[[Ljava.lang.String;@8b13d91]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gradeCreationTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test_cases.Employee_grade_Creation_DApproach@4dbb42b7]" started-at="2024-10-22T15:36:44 IST" name="teardown" finished-at="2024-10-22T15:36:47 IST" duration-ms="3281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- test_cases.Employee_grade_Creation_DApproach -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -10,6 +10,7 @@
       <class name="test_cases.Shift_type"/>
         <class name="test_cases.Vendor_type"/>
       <class name="test_cases.Branch_type"/>
+      <class name="Employee_grade_Creation_DApproach"/>
       
       
     </classes>
